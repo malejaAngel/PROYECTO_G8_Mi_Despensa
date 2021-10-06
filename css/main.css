@@ -1,0 +1,107 @@
+h1,h2,h3,h4,h5, button, label{
+    font-family: 'Bitter', serif;
+}
+
+#navbar{
+    z-index: 1;
+}
+
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+
+
+#bodycenter{
+    background: #ffe259;
+    background: linear-gradient(to right, #d1cfd8, #ffa751, #ffe259, #d1cfd8);
+}
+
+.bg{
+    background-image: url(../img/img1.jpg);
+    background: url(../img/img1.jpg) no-repeat ;
+    background-size: 110%;
+    background-position: center center;    
+}
+
+.imgborderradius{
+    border-radius: 60px 20px 70px 20px / 60px 20px 70px 20px;
+}
+
+#fondorallado{
+    background-color: rgb(219, 26, 26);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+}
+
+.fondopuntos{
+    background: url(../img/bg-04.png);
+    /* background-color: rgb(224, 144, 24); */
+    background-size: 50px 50px;
+}
+
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+#separator-ribbon .content{
+    width: 150%;
+    height: 100px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#manzanas{
+    background: rgb(255,255,255);
+    background: url(../img/bg-02.png), url(../img/bg-04.png),  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,196,255,1) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.09);
+}
+
+#separator-fondoOpcionesCarritos{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-fondoOpcionesCarritos .content{
+    background: url(../img/bg-04.png);
+    background-color: rgb(243, 243, 191);
+    background-size: 40px 40px;
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+}
+
+#fondoOpcionesCarritos{   
+    background: url(../img/bg-04.png);
+    background-color: rgb(243, 243, 191);
+     background-size: 40px 40px;
+}
+
+#footer{
+    background: url(../img/bg-04.png);
+    background-color: rgb(224, 186, 127);
+    background-size: 50px 50px;
+}
+
+
+
+
+

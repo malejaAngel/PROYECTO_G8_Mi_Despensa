@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="bodycenter">
+  <!-- NAVBAR-->
+  <nav class="navbar-expand-sm navbar-dark bg-danger fondopuntos" id="navbar">
+    <div class="align-items-center">
+        <h4 class="h2 text-center text-white text-shadow">SUPERMERCADO - MI DESPENSA
+        <a class="navbar-brand" href="#">
+            <img src="img/img5.png" alt="" width="120">
+        </a>
+    </h4>    
+
+    </div>
+</nav>
+    <div class="container-fluid">
+    <div id="fondorallado"  class="container w-75 my-3 rounded-2 shadow" >
+        <div class="row align-items-stretch">
+            <div class="col d-none d-md-block col-md-4 col-lg-5 col-xl-6 rounded-3">
+                <div class="col bg">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                </div>
+                
+                <div class="col d-none d-md-block">
+                    <img class="imgborderradius shadow" src="img/img2.jpg" width="100%" alt="">
+                    <br>
+                </div>
+
+            </div>
+
+            <div class="col bg-white rounded-end fondopuntos px-">
+                <div class="text-end">
+                    <img src="img/img0.png" width="30%" alt="" >
+                </div>
+
+                <h2 class="fw-bold text-center pt-2 mb-2 text-warning text-shadow">Bienvenido</h2>
+
+                <!--LOGIN-->
+                <form id="formulario_inicio_sesion" action="#">
+                    <div class="mb-3">
+                        <label for="num_cedula" class="form-label">Ingrese su número de cédula:</label>   
+                        <input type="number" class="form-control" name="num_cedula" id="num_cedula" placeholder= "Numero de cédula?">
+                        <p class="text-success" id="parrafo_validar_num_cedula"></p>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre_completo" class="form-label">Ingrese su nombre completo:</label>   
+                        <input type="text" class="form-control" name="nombre_completo" id="nombre_completo" placeholder= "Nombre completo?">
+                        <p class="text-success" id="parrafo_validar_nombre_completo"></p>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Ingrese su correo electrónico:</label>
+                        <input type="email" class="form-control" name="email" id="correo_e" placeholder= "Correo electrónico?">
+                        <p class="text-success" id="parrafo_validar_correo_e"></p>
+
+                    </div>
+                    <!--                     
+                        <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" name="passw" id=" pass">
+                    </div> 
+                    -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" name="connected" id="conectado">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-secondary text-shadow" id="boton_iniciar_sesion" onclick="validacion_de_campos()">Iniciar Sesión</button>
+                    </div>
+                    <!--                     
+                    <div class="my-2">
+                        <span>No tienes cuenta? <a href="#">Regístrate</a></span><br>
+                        <span><a href="#">Recuperar password</a></span>
+                    </div> 
+                    -->
+                    <br>
+                </form>
+
+                <!--LOGIN CON REDES SOCIALES-->
+                <!--
+                <div class="container w-100 my-3">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión con: </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block d-lg-block d-xl-block">
+                                        <img src="img/fb.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 col-lg-10 col-xl-10 text-center">
+                                        Facebook
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block d-lg-block d-xl-block">
+                                        <img src="img/google.png" width="32" alt="">
+                                    </div>
+                                    <div class="col-12 col-md-10 col-lg-10 col-xl-10 text-center">
+                                        Google
+                                    </div>
+
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+     <!-- FOOTER-->
+    <div  class="container fondopuntos bg-danger w-75 mb-3 rounded-3 text-white text-shadow">
+        <footer class="p-5">
+          <div class="row ">
+            <div class="col-md-4">
+              <h5>Integrantes Grupo 8 - G14</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Julieth Ximena Pabón Moreno</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">María Alejandra Ángel Puerto</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Henry Francisco Niño García</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Daniel Enrique Sandoval Cisneros</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Jean Paul Nieva Quijano</a></li>
+              </ul>
+            </div>
+      
+<!--             <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+              </ul>
+            </div> -->
+      
+            <div class="col-md-3">
+              <h5>Supermercoados Aliados</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperJumbo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperExito</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperMerqueo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">El vecino</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperFruver</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 offset-1">
+              <form>
+                <h5>Noticias y promociones</h5>
+                <p>Recibe las mejores ofertas en tu correo electrónico</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="noticias1" class="visually-hidden">Email address</label>
+                  <input id="noticias1" type="text" class="form-control" placeholder="Correo electrónico?">
+                  <button class="btn btn-warning" type="button">Subscribete</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between pt-4 border-top">
+            <p>&copy; 2021 G14 - Grupo 8, Inc. Todos los derechos recevados.</p>
+          </div>
+        </footer>
+      </div>
+
+    <script src="js/js_personalizado.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

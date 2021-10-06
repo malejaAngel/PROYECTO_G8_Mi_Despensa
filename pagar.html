@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="bodycenter">
+
+    <!-- NAVBAR-->
+    <nav class=" navbar-expand-sm navbar-dark bg-danger fondopuntos" id="navbar">
+        <div class="container-fluid">
+          
+          <div class="row align-items-center">
+            <div class="col text-end">
+              <h4 class="h2 text-center text-white text-shadow">SUPERMERCADO - MI DESPENSA
+                <a class="navbar-brand" href="#"><img src="img/img5.png" alt="" width="130"></a>
+              </h4>    
+            </div> 
+          </div>
+  
+          <div class="row">
+            <div class="col-12 text-center">
+              <button class="navbar-toggler mb-4"  
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div> 
+          </div>
+  
+          <div class="row justify-content-center collapse navbar-collapse pb-5 navbar-nav nav" id="navbarSupportedContent"">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 col-xxl-2 mb-2">
+              <div class="d-grid">
+                <button type="button" class="btn btn-success text-shadow py-2 rounded-pill" id="cpecyt" onclick=""><a href="menu_principal.html" class="text-white text-decoration-none">Menú Principal</a></button>
+              </div> 
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+    <div class="container w-75 my-3 rounded-2 shadow" >
+        <div id="fondoOpcionesCarritos" class="row align-items-stretch bg-primary bg-opacity-25">
+            <div class="col d-none d-md-block col-md-4 col-lg-5 col-xl-6 rounded-3">   
+                <div class="col d-none d-md-block pt-5">
+                    <img class="imgborderradius shadow" src="img/medios_pago2.png" width="100%" alt="">
+                </div>
+            </div>
+
+            <div class="col bg-white rounded-end fondopuntos px-">
+                <div class="text-end">
+                    <img src="img/img0.png" width="30%" alt="" >
+                </div>
+
+                <h2 class="fw-bold text-center pt-2 mb-2 text-warning text-shadow">Pague su pedido con cualquiera de los medios disponibles:</h2>
+                </br>
+                <h5 class="fw-bold text-center pt-2 mb-2 text-secondary">El valor total a pagar es: <span class="text-primary">$ 200.000</span></h5>
+                <h5 class="fw-bold text-center pt-2 mb-2 text-secondary">IVA del 19% ya incuido</h5>
+                <h5 class="fw-bold text-center pt-2 mb-2 text-secondary">El valor total de obsequios a obtener es: <span class="text-primary"> $ 13.000</span></h5>
+                <!--PAGO-->
+
+                <form id="formulario_inicio_sesion" action="#">
+                    
+                    <div class="mb-3 py-4 text-center"> 
+                        <label class="form-weigth-bold" for="medioPago">Seleccione el medio de pago deseado:</label>
+                        <select class="form-select text-center" id="medioPago" name="medios_Pago">
+                            <option value="" selected="true">Seleccione un el medio de pago</option>
+                            <option value="1">Tarjeta de Credito</option>
+                            <option value="2">Tarjeta Debito</option>
+                            <option value="3">Nequi</option>
+                        </select>
+                    </div>
+                    
+                    <!--                     
+                        <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" name="passw" id=" pass">
+                    </div> 
+                    -->
+
+                    <div class="d-grid pb-4">
+                        <button type="button" class="btn btn-primary rounded-3 text-shadow" id="boton_iniciar_sesion" onclick="validacion_de_campos()"> :: Pagar ::</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+     <!-- FOOTER-->
+    <div  class="container fondopuntos bg-danger w-75 mb-3 rounded-3 text-white text-shadow">
+        <footer class="p-5">
+          <div class="row ">
+            <div class="col-md-4">
+              <h5>Integrantes Grupo 8 - G14</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Julieth Ximena Pabón Moreno</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">María Alejandra Ángel Puerto</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Henry Francisco Niño García</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Daniel Enrique Sandoval Cisneros</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">Jean Paul Nieva Quijano</a></li>
+              </ul>
+            </div>
+      
+<!--             <div class="col-2">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+              </ul>
+            </div> -->
+      
+            <div class="col-md-3">
+              <h5>Supermercoados Aliados</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperJumbo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperExito</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperMerqueo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">El vecino</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-warning">SuperFruver</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 offset-1">
+              <form>
+                <h5>Noticias y promociones</h5>
+                <p>Recibe las mejores ofertas en tu correo electrónico</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="noticias1" class="visually-hidden">Email address</label>
+                  <input id="noticias1" type="text" class="form-control" placeholder="Correo electrónico?">
+                  <button class="btn btn-warning" type="button">Subscribete</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between pt-4 border-top">
+            <p>&copy; 2021 G14 - Grupo 8, Inc. Todos los derechos recevados.</p>
+          </div>
+        </footer>
+      </div>
+
+    <script src="js/js_personalizado.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
